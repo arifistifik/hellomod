@@ -1,0 +1,10 @@
+╭───「 Special Edition 」
+├≽ {key}Mtoh「 tgl-bln-thn 」
+├≽ {key}Al-quran「 nomor 」
+├≽ {key}Ayat sajadah
+├≽ {key}Asmaulhusna「 nomor 」
+├≽ {key}Ytmp4「 judul 」
+├≽ {key}Ytmp3「 judul 」
+├≽ {key}Instagram
+├≽ {key}Dell「 RemoveChat 」
+╰───「 Hello World 」
