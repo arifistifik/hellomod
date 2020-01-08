@@ -26,7 +26,7 @@ $ python3 helloworld.py -a IOSIPAD
 [HelloWorld Square](https://line.me/ti/g2/JGUODBE4RE)
 
 [DRAGON PLAY KILLER](https://line.me/ti/g2/CLwjDdWYhhnpNep8hHEEgg)
-# ![logo](/dpkopenchat.jpg)LINE OPENCHAT
+# ![logo](/dpkopenchat.jpg)
 ## Discord
 [HelloWorld](https://discord.gg/5jqbutB)
 
