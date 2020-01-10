@@ -1,10 +1,17 @@
 ╭───「 Special Edition 」
-├≽ {key}Mtoh「 tgl-bln-thn 」
-├≽ {key}Al-quran「 nomor 」
-├≽ {key}Ayat sajadah
-├≽ {key}Asmaulhusna「 nomor 」
-├≽ {key}Ytmp4「 judul 」
-├≽ {key}Ytmp3「 judul 」
-├≽ {key}Instagram
-├≽ {key}Dell「 RemoveChat 」
+├≽ gift
+├≽ respond
+├≽ mybot
+├≽ allmid
+├≽ spamcall「 jumlah 」
+├≽ Mtoh「 tgl-bln-thn 」
+├≽ Al-quran「 nomor 」
+├≽ Ayat sajadah
+├≽ Asmaulhusna「 nomor 」
+├≽ Smule「 id 」
+├≽ Smule「 id-nomor 」
+├≽ Ytmp4「 judul 」
+├≽ Ytmp3「 judul 」
+├≽ Instagram「 id 」
+├≽ Dell「 RemoveChat 」
 ╰───「 Hello World 」

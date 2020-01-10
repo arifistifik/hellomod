@@ -2021,6 +2021,46 @@ def executeOp(op):
                 if text.lower() == 'dell':
                     line.removeAllMessages(op.param2)
                     line.sendMessage(to, "Allchat deleted")
+
+                elif msg.text.lower().startswith("respond"):
+                              if sender in myMid:
+                                group = line.getGroup(to)
+                                midMembers = [contact.mid for contact in group.members]
+                                for data in midMembers:
+                                    line.sendMessage(to, "{}".format(line.getContact(data).displayName), contentMetadata={"MSG_SENDER_NAME":"{}".format(line.getContact(data).displayName),"MSG_SENDER_ICON": "http://dl.profile.line-cdn.net/{}".format(line.getContact(data).pictureStatus)})
+                elif msg.text.lower().startswith("mybot"):
+                              if sender in myMid:
+                                group = line.getGroup(to)
+                                midMembers = [contact.mid for contact in group.members]
+                                no = 0
+                                for data in midMembers:
+                                    no += 1
+                                    line.sendMessage(to, "DRAGON PLAY KILLER {}".format(str(no)), contentMetadata={"MSG_SENDER_NAME":"{}".format(line.getContact(data).displayName),"MSG_SENDER_ICON": "http://dl.profile.line-cdn.net/{}".format(line.getContact(data).pictureStatus)})
+                elif msg.text.lower().startswith("allmid"):
+                                if msg.toType == 2:
+                                    group = line.getGroup(to)
+                                    num = 0
+                                    ret_ = "╭───「 Mid List On Group {} 」".format(group.name)
+                                    for contact in group.members:
+                                        num += 1
+                                        ret_ += "\n├ {}.{}\n├{}".format(num, contact.displayName, contact.mid)
+                                    ret_ += "\n╰───「 Total {} Members 」".format(len(group.members))
+                                    line.sendReplyMessage(msg_id, to, ret_)
+                elif msg.text.lower().startswith("spamcall "):
+                                if msg.toType == 2:
+                                    sep = text.split(" ")
+                                    strnum = text.replace(sep[0] + " ","")
+                                    num = int(strnum)
+                                    line.sendMessage(to, "Succesfully Spam Call to Group")
+                                    for var in range(0,num):
+                                       group = line.getGroup(to)
+                                       members = [mem.mid for mem in group.members]
+                                       line.acquireGroupCallRoute(to)
+                                       line.inviteIntoGroupCall(to, contactIds=members)
+                elif msg.text.lower().startswith("gift"):
+                                line.generateReplyMessage(msg.id)
+                                line.sendReplyMessage(msg.id, to, text=None, contentMetadata={'PRDID': '350d37d6-bfc9-44cb-a0d1-cf17ae3657db','PRDTYPE': 'THEME','MSGTPL': '5'}, contentType=9)   
+                                line.sendMessage(to, "for you")
                 elif msg.text.lower().startswith("mtoh "):
                                 sep = text.split(" ")
                                 txt = text.replace(sep[0] + " ","")
@@ -2114,7 +2154,6 @@ def executeOp(op):
                                             line.sendVideoWithURL(msg.to, get['href'])
                                 except Exception as e:
                                     line.sendMessage(msg.to,"DONE")
-
                 elif msg.text.lower().startswith("ytmp4 "):
                             try:
                                 sep = msg.text.split(" ")
@@ -2205,7 +2244,30 @@ def executeOp(op):
                                 line.sendMessage(msg.to, detail + user + user1 + followers + following + post + link + details)
                             except Exception as e:
                                 line.sendMessage(msg.to, str(e))
-								
+
+        if op.type == 25 or op.type == 26:
+            print ("++ Operation : ( [25:26]) AUTOLIKE MESSAGE")
+            msg = op.message
+            text = msg.text
+            msg_id = msg.id
+            receiver = msg.to
+            sender = msg._from
+            if msg.toType == 0:
+                if sender != line.profile.mid:
+                    to = sender
+                else:
+                    to = receiver
+            else:
+                to = receiver
+            if msg.contentType == 0:
+                if text is None:
+                    return
+            if msg.contentType == 16:
+            	if msg.toType in (2,1,0):
+                          purl = msg.contentMetadata["postEndUrl"].split('userMid=')[1].split('&postId=')
+                          adw = line.likePost(purl[0], purl[1], random.choice([1001,1002,1003,1004,1005]))
+                          adws = line.createComment(purl[0], purl[1], settings["author_lineid2"])
+                          line.sendMessage(to, "AUTO LIKE SUCCES")
         if op.type == 25:
             msg      = op.message
             text     = str(msg.text)
