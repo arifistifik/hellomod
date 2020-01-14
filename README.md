@@ -1,5 +1,7 @@
 # LINE Python
 
+# jika run sudah berhasil, silahkan ketik (.help) untuk melihat keycommand mu
+
 ## Installation for Termux
 
 ```sh
