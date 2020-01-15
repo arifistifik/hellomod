@@ -1,38 +1,39 @@
 {
     "autoAdd": {
         "status": false,
-        "message": "Hello @!, thanks for add me as your friend\nSelfbot by Hello World",
+        "message": "Hello @!, thanks for add me as your friend\nSelfbot by DPK TEAM",
         "reply": true
     },
+    "autoLike": false,
     "autoJoin": {
         "status": false,
-        "message": "Hello @!, thanks for invite me to this group\nSelfbot by Hello World",
+        "message": "Hello @!, thanks for invite me to this group\nSelfbot by DPK TEAM",
         "reply": true,
         "ticket": false
     },
     "autoRead": false,
     "autoRespond": {
-        "status": false,
-        "message": "Hello @!, thanks for your message this is auto respond\nSelfbot by Hello World"
+        "status": true,
+        "message": "Hello @!, thanks for your message this is auto respond\nSelfbot by DPK TEAM"
     },
     "autoRespondMention": {
         "status": false,
-        "message": "Hello @!, thanks for mentioned me, if your message is very important please leave it on personal chat\nSelfbot by Hello World"
+        "message": "Hello @!, thanks for mentioned me, if your message is very important please leave it on personal chat\nSelfbot by DPK TEAM"
     },
     "changeGroupPicture": [],
     "changePictureProfile": false,
     "changeCoverProfile": false,
     "checkContact": false,
-    "checkPost": false,
+    "checkPost": true,
     "checkSticker": false,
-    "defaultReplyReader" : "Hello @!, come here join to chat",
+    "defaultReplyReader": "Hello @!, come here join to chat",
     "greet": {
         "join": {
-            "status": false,
+            "status": true,
             "message": "Hello @!, welcome to group {name}"
         },
         "leave": {
-            "status": false,
+            "status": true,
             "message": "Good bye @!, see you next time"
         }
     },
@@ -43,16 +44,16 @@
         "statusMessage": ""
     },
     "mimic": {
-        "status": false,
+        "status": true,
         "target": {}
     },
     "restartPoint": null,
     "setKey": {
         "status": true,
-        "key": "."
+        "key": ""
     },
-    "copyright": "If you respect the author please don't remove this copyright\n© 2018 Hello World",
+    "copyright": "If you respect the author please don't remove this copyright\n\u00a9 2018 Hello World",
     "author_lineid": "You can add the author by line id, https://line.me/ti/p/~zero-cool404",
-    "author_lineid2": "You can add the author by line id, http://line.me/ti/p/~@cob0606n",
+    "author__lineid": "You can add the author by line id, http://line.me/ti/p/~@cob0606n",
     "editor_lineid": "You can add the editor by line id, http://line.me/ti/p/~@arifistifik"
 }

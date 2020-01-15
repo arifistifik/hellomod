@@ -1,8 +1,9 @@
-╭───「 Special Edition 」
+╭───[ Special Edition ]
 ├≽ gift
 ├≽ respond
 ├≽ mybot
 ├≽ allmid
+├≽ Autolike「 on|off 」
 ├≽ spamcall「 jumlah 」
 ├≽ Mtoh「 tgl-bln-thn 」
 ├≽ Al-quran「 nomor 」
@@ -14,4 +15,4 @@
 ├≽ Ytmp3「 judul 」
 ├≽ Instagram「 id 」
 ├≽ Dell「 RemoveChat 」
-╰───「 Hello World 」
+╰───[ Selfbot Team ]
